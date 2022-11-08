@@ -41,7 +41,7 @@ function showQuestion(question) {
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('btn')
-        if (answer-correct) {
+        if (answer.correct) {
             button.dataset.correct = answer.correct
         }
         button.addEventListener('click', selectAnswer)
@@ -50,7 +50,10 @@ function showQuestion(question) {
 }
 
 function resetState() {
-
+    nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
 }
 
 function selectAnswer(e) {
