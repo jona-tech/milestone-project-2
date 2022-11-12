@@ -11,7 +11,7 @@ The site has been created as a milestone project for the Code Institute's Diplom
 
 Required technologies are: HTML5, CSS3 and JavaScript
 
-A live version of the website can be found here: 
+A live version of the website can be found here: https://jona-tech.github.io/milestone-project-2/
 
 ## Content
 
