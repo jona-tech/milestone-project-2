@@ -119,7 +119,14 @@ Restart
 #### Deployment
 
 <ol>
-'steps of deployment'
+<li>Go to https://www.github.com</li>
+<li>Log in</li>
+<li>Go to 'My Repositories'</li>
+<li>Choose 'milestone-project-2'</li>
+<li>Go to 'settings'</li>
+<li>Go to 'pages'</li>
+<li>Choose 'deploy from a branch'</li>
+<li>Choose 'main branch'</li>
 </ol>
 
 #### Content
