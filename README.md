@@ -13,12 +13,29 @@ Required technologies are: HTML5, CSS3 and JavaScript
 
 A live version of the website can be found here: 
 
-## Table of content
+## Content
 
-<ul>
-
-</ul>
-
++ [UX](#UX 'UX')
++ [Target Audience](#target-audience 'Target Audience')
++ [User stories](#user-stories 'User stories')
+    + [New Users](#new-users 'New Users')
+    + [Experienced Users](#experienced-users 'Experienced Users')
+    + [Goal](#goal 'Goal')
+    + [Requirements](#requirements 'Requirements')
++ [Design](#design 'Design')
+    + [Typography](#typography 'Typography')
+    + [Color Palette](#color-palette 'Color Palette')
+    + [Different screens](#different-screens 'Different screens')
+    + [Images](#images 'Images')
+    + [Structure](#structure 'Structure')
++ [Future development](#future-development 'Future development')
++ [Technologies used](#technologies-used 'Technologies used')
+    + [Languages ](#languages  'Languages ')
+    + [Deployment](#deployment 'Deployment')
+    + [Content](#content 'Content')
+    + [Media](#media 'Media')
+    + [bugs](#bugs 'bugs')
+    + [Credits](#credits 'Credits')
 ## UX
 <hr>
 
@@ -45,8 +62,7 @@ A live version of the website can be found here:
 
 ### Design
 The design is simple to keep the user focused on the quiz without unnecessary distractions. When clicking an answer, all the wrong answers turns grey and the correct answer(s) turns green.
-
-''Insert pictures of different stages of the quiz here''
+Start Quiz
 
 #### Typography
 * I used google fonts 'Handlee' font to increase the sensation of playfulness to the website.
@@ -64,20 +80,29 @@ The design is simple to keep the user focused on the quiz without unnecessary di
 
 #### Structure
 
-The website consists of two different layouts.
+* Score Counter
+
+<img src="assets/images/score-counter.png">
+
 * Start/Restart is the same layout with different text in the button element depending on whether to Start a new quiz, or restart the quiz after finishing.
 
-'picture of start and restart'
+Start
+
+<img src="assets/images/start-screen.png">
+
+Restart
+
+<img src="assets/images/restart.png">
 
 * Quiz layout shows a question box with 4 different options to choose from.
 
-'picture of question box'
+<img src="assets/images/quiz.png">
 
 * Wrong answers turns grey and correct answer turns green when clicking an option.
 
-'picture of wrong and correct answers'
+<img src="assets/images/correct-incorrect.png">
 
-#### Future development
+### Future development
 * The website is going to have more quiz's with a focus on wide range knowledge of topics that can challenge well educated users.
 
 ### Technologies used
@@ -119,13 +144,14 @@ The website consists of two different layouts.
 </ul>
 <li>Bug 3 (Unfixed)</li>
 <ul>
-<li>Score incrementation continues from current integer after clicking restart button</li>
+<li>Score counter doesn't restart</li>
 </ul>
 </ul>
 
 ### Credits
 
 * web dev simplified
-* other students?
-* w3 school
+* W3 school
 * Stack overflow
+* My mentor Martina Terlevic
+
