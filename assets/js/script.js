@@ -11,18 +11,20 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 let shuffledQuestions, currentQuestionIndex;
 let oldScore = 0;
 
+// Event listeners for start, restart and next button
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
 });
 
-
+// score counter from love maths project
 function incrementScore() {
     let oldScore = parseInt(document.getElementById('count-correct').innerText);
     document.getElementById('count-correct').innerText = ++oldScore;
 }
 
+// makes start button disasppear and sorts through questions array in a random order and calls next question function
 function startQuiz() {
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
@@ -31,12 +33,12 @@ function startQuiz() {
     oldScore = 0;
     setNextQuestion();
 }
-
+//calls reset function, calls next question
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
-
+//shows question and options by changing inner HTML text and makes buttons. Checks if anwer is correct
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -50,14 +52,14 @@ function showQuestion(question) {
         answerButtonsElement.appendChild(button);
     });
 }
-
+//hides next button and clears question container to show next question
 function resetState() {
     nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
-
+//increments score, select next question, shows restart button when questions are finished
 function selectAnswer(e) {
     let selectedButton = e.target;
     let correct = selectedButton.dataset.correct;
@@ -76,7 +78,7 @@ function selectAnswer(e) {
     }
 
 }
-
+//makes CSS turn correct button green and incorrect buttons grey
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -85,12 +87,12 @@ function setStatusClass(element, correct) {
         element.classList.add('wrong');
     }
 }
-
+// clears CSS changes before next question
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
-
+//questions array
 const questions = [{
     question: 'How many tones exist in the chromatic scale?',
     answers: [{
