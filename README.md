@@ -69,7 +69,7 @@ Start Quiz
 * I used Sans-serfi as a backup for users that may have browsers not supporting google fonts.
 
 #### Color Palette
-* There are only '' colors on the palette, chosen from personal preference to make a simple look and make text readable without unnecessary distractions.
+* The color palette is chosen from personal preference. It makes a simple look and makes the text readable without unnecessary distractions.
 * The background is gradient going left to right, grey to black to make the design more sophisticated.
 
 #### Different screens
@@ -109,8 +109,9 @@ Restart
 
 #### Languages 
 
-* HTML5
-' add jigsaw w3 HTML validation picture as proof'
+* HTML5 <br>
+    Proof of validation through W3 HTML validator<br>
+    <img src="assets/images/html-valid.png">
 * CSS3
 <br>Proof of validation through W3 Jigsaw CSS3 validator
 <p>
@@ -120,9 +121,10 @@ Restart
             alt="Valid CSS!" />
     </a>
 </p>
-'
-* JavaScript
-'add jshint validation img as proof'
+
+* JavaScript<br>
+Proof of validation through jshint with one warning as seen below<br>
+<img src="assets/images/jshint.png">
 
 #### Deployment
 
