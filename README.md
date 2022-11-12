@@ -15,7 +15,7 @@ A live version of the website can be found here: https://jona-tech.github.io/mil
 
 ## Content
 
-+ [UX](#UX 'UX')
++ [UX](#ux 'UX')
 + [Target Audience](#target-audience 'Target Audience')
 + [User stories](#user-stories 'User stories')
     + [New Users](#new-users 'New Users')
